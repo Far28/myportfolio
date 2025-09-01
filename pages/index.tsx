@@ -176,36 +176,64 @@ export default function Home() {
 <section id="projects" className="max-w-5xl mx-auto p-10">
   <h3 className="text-3xl font-bold mb-6 text-pink-400 text-center">Projects</h3>
   <div className="grid md:grid-cols-2 gap-8 justify-center items-stretch">
-    
+
     <div className="p-6 border border-gray-700 rounded-lg shadow hover:shadow-lg bg-gray-900 flex flex-col items-center">
       <h4 className="font-semibold text-xl text-pink-400 text-center mb-2 tracking-wide uppercase">DoBu Martial Arts Website</h4>
-      <p className="text-sm mt-2 text-gray-300">
-        A static multi-page website for DoBu Martial Arts including pages such as Home, About, Classes, Trainers, Membership, and Contact. 
-        Designed to provide information about classes and facilities with a clean, responsive layout. <br />
-        <span className="text-pink-400">Tech Used:</span> HTML, CSS, JavaScript
+      <p className="text-sm mt-2 text-gray-300 text-center">
+        A static multi-page website for DoBu Martial Arts with Home, About, Classes, Trainers, Membership and Contact pages.
+        Clean, responsive design focused on usability and information for potential members.
       </p>
-      <a href="https://github.com/Far28/DoBuMartialArts.git" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline mt-2 inline-block">Source Code</a>
+      <p className="mt-3 text-xs text-gray-400"><span className="text-pink-400">Tech Used:</span> HTML • CSS • JavaScript</p>
+      <a href="https://github.com/Far28/DoBuMartialArts.git" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline mt-3 inline-block">Source Code</a>
     </div>
 
     <div className="p-6 border border-gray-700 rounded-lg shadow hover:shadow-lg bg-gray-900 flex flex-col items-center">
       <h4 className="font-semibold text-xl text-pink-400 text-center mb-2 tracking-wide uppercase">Judo Fee Calculator (Java)</h4>
-      <p className="text-sm mt-2 text-gray-300">
-        A console-based Java application that calculates monthly training fees for judo athletes based on weight, training plan, and private coaching hours. 
-        Provides detailed cost breakdowns for different profiles. <br />
-        <span className="text-pink-400">Tech Used:</span> Java (OOP, Console I/O)
+      <p className="text-sm mt-2 text-gray-300 text-center">
+        Console-based Java application that computes monthly training costs for judo athletes. Accepts athlete details (weight, plan, private coaching hours)
+        and returns a clear cost breakdown for training, coaching, and competition fees.
       </p>
-      <a href="https://github.com/Far28/judofeecalculator.git" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline mt-2 inline-block">Source Code</a>
+      <p className="mt-3 text-xs text-gray-400"><span className="text-pink-400">Tech Used:</span> Java (OOP, Console I/O)</p>
+      <a href="https://github.com/Far28/judofeecalculator.git" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline mt-3 inline-block">Source Code</a>
     </div>
 
     <div className="p-6 border border-gray-700 rounded-lg shadow hover:shadow-lg bg-gray-900 flex flex-col items-center">
       <h4 className="font-semibold text-xl text-pink-400 text-center mb-2 tracking-wide uppercase">Meals on Wheels (Enterprise Web App)</h4>
-      <p className="text-sm mt-2 text-gray-300">
-        A full-stack enterprise food delivery system with a structured backend and secure user authentication. 
-        Features include customer management, order tracking, and reporting dashboards. <br />
-        <span className="text-pink-400">Tech Used:</span> Java, Spring MVC, Hibernate, MySQL, JSP, CSS
+      <p className="text-sm mt-2 text-gray-300 text-center">
+        A full-stack enterprise-grade food delivery platform with customer management, order tracking, secure authentication,
+        admin dashboards and recommendation features (AI-powered). Designed for scalability with a modern frontend and a robust Java backend.
       </p>
-      <a href="https://github.com/AlexAutumns/MerryMeals-TeamBanana.git" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline mt-2 inline-block">Source Code</a>
+
+      <div className="mt-3 text-left text-xs text-gray-400 w-full">
+        <p className="text-pink-400 font-medium">Tech Stack (high level):</p>
+        <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
+          <li><strong>Frontend:</strong> React + Tailwind CSS (Styling: Tailwind CSS v3.4.17)</li>
+          <li><strong>Frontend Tooling:</strong> TypeScript v5.8.3, Vite v5.4.19</li>
+          <li><strong>Backend:</strong> Spring Boot (Java) — REST APIs, business logic</li>
+          <li><strong>Auth:</strong> JWT with Spring Security</li>
+          <li><strong>Primary DB:</strong> MySQL (transactional data)</li>
+          <li><strong>Additional Services:</strong> Supabase (Postgres) + Supabase Edge Functions (Deno) for serverless features/real-time or analytics</li>
+          <li><strong>API Client:</strong> Axios (frontend → backend communication)</li>
+          <li><strong>AI Integration:</strong> OpenAI API (recommendations & sentiment analysis)</li>
+        </ul>
+      </div>
+
+      <a href="https://github.com/AlexAutumns/MerryMeals-TeamBanana.git" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline mt-3 inline-block">Source Code</a>
     </div>
+
+    <div className="p-6 border border-gray-700 rounded-lg shadow hover:shadow-lg bg-gray-900 flex flex-col items-center">
+      <h4 className="font-semibold text-xl text-pink-400 text-center mb-2 tracking-wide uppercase">Jumpstart Fashion (Full-Stack E-commerce Prototype)</h4>
+      <p className="text-sm mt-2 text-gray-300 text-center">
+        Full-stack e-commerce prototype built to showcase product listings, responsive product pages, and basic cart functionality.
+        Focus was on delivering a polished shopping experience with responsive UI and easy product management.
+      </p>
+      <p className="mt-3 text-xs text-gray-400"><span className="text-pink-400">Tech Used:</span> HTML • CSS • JavaScript (Frontend) — Repo includes example backend/api code and demo data</p>
+      <a href="https://github.com/Far28/jumpstart-fashion.git" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline mt-3 inline-block">Source Code</a>
+    </div>
+
+  </div>
+</section>
+
 
     <div className="p-6 border border-gray-700 rounded-lg shadow hover:shadow-lg bg-gray-900 flex flex-col items-center">
       <h4 className="font-semibold text-xl text-pink-400 text-center mb-2 tracking-wide uppercase">Jumpstart Fashion (Full-Stack E-Commerce Prototype)</h4>

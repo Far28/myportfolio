@@ -2,6 +2,7 @@
 // This page will display the PDF in an iframe
 import Head from "next/head";
 import { FaArrowLeft } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Resume() {
   return (
@@ -11,9 +12,9 @@ export default function Resume() {
       </Head>
       <div className="max-w-5xl mx-auto p-6">
         <div className="mb-4">
-          <a href="/" className="inline-flex items-center text-pink-400 hover:text-pink-600 font-semibold">
+          <Link href="/" className="inline-flex items-center text-pink-400 hover:text-pink-600 font-semibold">
             <FaArrowLeft className="mr-2 text-xl" /> Back to Home
-          </a>
+          </Link>
         </div>
         <h1 className="text-3xl font-bold text-pink-400 mb-6 text-center">My Resume</h1>
         <div className="flex justify-center">

@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import { FaGithub, FaLinkedin, FaJava, FaPython, FaHtml5, FaCss3Alt, FaJsSquare, FaDatabase, FaReact, FaBootstrap } from "react-icons/fa";
-import { SiSpring, SiSpringboot, SiMysql, SiJavascript, SiHtml5, SiCss3, SiBootstrap, SiReact, SiApachespark } from "react-icons/si";
+import { FaGithub, FaLinkedin, FaJava, FaPython, FaReact, FaBootstrap } from "react-icons/fa";
+import { SiSpring, SiSpringboot, SiMysql, SiJavascript, SiHtml5, SiCss3, SiApachespark } from "react-icons/si";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
             <li><a href="#skills" className="hover:text-pink-400">Skills</a></li>
             <li><a href="#projects" className="hover:text-pink-400">Projects</a></li>
             <li><a href="#contact" className="hover:text-pink-400">Contact</a></li>
-            <li><a href="/resume" className="hover:text-pink-400">Resume</a></li>
+            <li><Link href="/resume" className="hover:text-pink-400">Resume</Link></li>
           </ul>
         </nav>
       </header>
@@ -71,8 +72,8 @@ export default function Home() {
             </ul>
           </div>
         </div>
-  <p className="leading-relaxed text-gray-200 text-center">
-          I am a passionate Software Engineering student driven by curiosity and creativity. My journey in tech has been fueled by hands-on projects where I’ve explored web development, backend systems, and user-focused design. I enjoy solving real-world problems through clean, efficient code and I’m eager to grow into a developer who creates meaningful digital experiences.
+        <p className="leading-relaxed text-gray-200 text-center">
+          I am a passionate Software Engineering student driven by curiosity and creativity. My journey in tech has been fueled by hands-on projects where I&apos;ve explored web development, backend systems, and user-focused design. I enjoy solving real-world problems through clean, efficient code and I&apos;m eager to grow into a developer who creates meaningful digital experiences.
         </p>
       </section>
 

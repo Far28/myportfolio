@@ -211,8 +211,14 @@ export default function Home() {
       <h4 className="font-semibold text-xl text-pink-400 text-center mb-2 tracking-wide uppercase">Jumpstart Fashion (Full-Stack E-Commerce Prototype)</h4>
       <p className="text-sm mt-2 text-gray-300">
         A full-stack prototype for an e-commerce fashion platform featuring product browsing, user interface design, and cart functionality. 
-        Focused on delivering a modern shopping experience with responsive layouts. <br />
-        <span className="text-pink-400">Tech Used:</span> HTML, CSS, JavaScript (Frontend) | Node.js, Express.js (Backend)
+        Focused on delivering a modern shopping experience with responsive layouts.<br />
+        <span className="text-pink-400">Tech Used:</span><br />
+        <span className="block ml-2">Styling: Tailwind CSS 3.4.17</span><br />
+        <span className="block ml-2">Programming Language: TypeScript 5.8.3</span><br />
+        <span className="block ml-2">Build Tool: Vite 5.4.19</span><br />
+        <span className="block ml-2">Database: Supabase PostgreSQL</span><br />
+        <span className="block ml-2">Backend: Supabase Edge Functions (Deno)</span><br />
+        <span className="block ml-2">AI Integration: OpenAI API (for recommendations &amp; sentiment analysis)</span>
       </p>
       <a href="https://github.com/Far28/jumpstart-fashion.git" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline mt-2 inline-block">Source Code</a>
     </div>

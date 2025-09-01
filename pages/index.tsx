@@ -251,9 +251,6 @@ export default function Home() {
       <a href="https://github.com/Far28/jumpstart-fashion.git" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline mt-2 inline-block">Source Code</a>
     </div>
 
-  </div>
-</section>
-
       {/* Contact */}
       <section id="contact" className="max-w-5xl mx-auto p-10">
         <div className="flex flex-col items-center justify-center">

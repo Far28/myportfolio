@@ -31,7 +31,7 @@ export default function Home() {
         <Image src="/farhaphoto.png" alt="Farha Photo" width={260} height={260} className="rounded-full shadow-lg border-4 border-pink-400 mb-8" />
         <h2 className="text-4xl md:text-6xl font-bold mb-4">F.H.Farha</h2>
         <p className="text-lg md:text-2xl max-w-2xl italic text-gray-300">
-          "Turning ideas into reality through creativity, passion, and code."
+          &quot;Turning ideas into reality through creativity, passion, and code.&quot;
         </p>
         <div className="mt-6 flex gap-4">
           <a href="#projects" className="px-6 py-2 bg-pink-500 text-white rounded-full shadow hover:bg-pink-600">View Projects</a>

@@ -40,34 +40,26 @@ export default function Home() {
       </section>
 
       {/* About Me */}
-      <section id="about" className="max-w-5xl mx-auto pt-4 pb-10 px-6">
+      <section id="about" className="max-w-5xl mx-auto pt-4 pb-10 px-4 sm:px-6">
         <h3 className="text-3xl font-bold mb-6 text-pink-400 text-center">About Me</h3>
         <div className="flex justify-center mb-6">
-          <div className="bg-gray-900 border-4 border-pink-400 rounded-2xl shadow-lg p-8 w-full max-w-2xl">
+          <div className="bg-gray-900 border-4 border-pink-400 rounded-2xl shadow-lg p-6 sm:p-8 w-full max-w-2xl">
             <ul className="space-y-4">
               <li className="flex items-center gap-3">
-                <span className="text-pink-400 font-semibold"><svg xmlns='http://www.w3.org/2000/svg' className='inline-block mr-1' width='22' height='22' fill='currentColor' viewBox='0 0 24 24'><path d='M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z'/></svg>Birthday:</span>
-                <span className="text-gray-200">28th of July 2003</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="text-pink-400 font-semibold"><svg xmlns='http://www.w3.org/2000/svg' className='inline-block mr-1' width='22' height='22' fill='currentColor' viewBox='0 0 24 24'><path d='M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z'/></svg>Age:</span>
+                <span className="text-pink-400 font-semibold">Age:</span>
                 <span className="text-gray-200">22</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-pink-400 font-semibold"><svg xmlns='http://www.w3.org/2000/svg' className='inline-block mr-1' width='22' height='22' fill='currentColor' viewBox='0 0 24 24'><path d='M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z'/></svg>Languages:</span>
+                <span className="text-pink-400 font-semibold">Languages:</span>
                 <span className="text-gray-200">English, Sinhala, Tamil</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-pink-400 font-semibold"><svg xmlns='http://www.w3.org/2000/svg' className='inline-block mr-1' width='22' height='22' fill='currentColor' viewBox='0 0 24 24'><path d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z'/></svg>Location:</span>
+                <span className="text-pink-400 font-semibold">Location:</span>
                 <span className="text-gray-200">Colombo, Sri Lanka</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-pink-400 font-semibold"><svg xmlns='http://www.w3.org/2000/svg' className='inline-block mr-1' width='22' height='22' fill='currentColor' viewBox='0 0 24 24'><path d='M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8h16v10zm-8-7c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z'/></svg>Email:</span>
+                <span className="text-pink-400 font-semibold">Email:</span>
                 <span className="text-gray-200">farhasha2803@gmail.com</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="text-pink-400 font-semibold"><svg xmlns='http://www.w3.org/2000/svg' className='inline-block mr-1' width='22' height='22' fill='currentColor' viewBox='0 0 24 24'><path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z'/></svg>Degree:</span>
-                <span className="text-gray-200">BSc (Hons) in Software Engineering</span>
               </li>
             </ul>
           </div>
@@ -75,6 +67,21 @@ export default function Home() {
         <p className="leading-relaxed text-gray-200 text-center">
           I am a passionate Software Engineering student driven by curiosity and creativity. My journey in tech has been fueled by hands-on projects where I&apos;ve explored web development, backend systems, and user-focused design. I enjoy solving real-world problems through clean, efficient code and I&apos;m eager to grow into a developer who creates meaningful digital experiences.
         </p>
+      </section>
+
+      {/* Education */}
+      <section id="education" className="max-w-5xl mx-auto pb-10 px-4 sm:px-6">
+        <h3 className="text-3xl font-bold mb-6 text-pink-400 text-center">Education</h3>
+        <div className="flex justify-center">
+          <div className="bg-gray-900 border-4 border-pink-400 rounded-2xl shadow-lg p-6 sm:p-8 w-full max-w-2xl">
+            <ul className="space-y-4 text-gray-200">
+              <li><span className="text-pink-400 font-semibold">G.C.E. Advanced Level- 2022(23):</span> Department of Examinations, Sri Lanka. (Commerce Stream)</li>
+              <li><span className="text-pink-400 font-semibold">G.C.E. Ordinary Level- 2019:</span> Department of Examinations, Sri Lanka.</li>
+              <li><span className="text-pink-400 font-semibold">Foundation in IT- 2023:</span> Australian College of Business and Technology</li>
+              <li><span className="text-pink-400 font-semibold">Bachelor of Science (Hons) in Computer Science – 2024 - Present:</span> Lithan Academy, Singapore</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       {/* Skills */}
@@ -178,6 +185,7 @@ export default function Home() {
   <div className="grid md:grid-cols-2 gap-8 justify-center items-stretch">
     
     <div className="p-6 border border-gray-700 rounded-lg shadow hover:shadow-lg bg-gray-900 flex flex-col items-center">
+      <Image src="/DoBuMartialarts.png" alt="DoBu Martial Arts Website Screenshot" width={400} height={220} className="rounded-lg mb-4 object-cover w-full h-44 sm:h-56 md:h-48 lg:h-44 xl:h-48" />
       <h4 className="font-semibold text-xl text-pink-400 text-center mb-2 tracking-wide uppercase">DoBu Martial Arts Website</h4>
       <p className="text-sm mt-2 text-gray-300">
         A static multi-page website for DoBu Martial Arts including Home, About, Classes, Trainers, Membership, Timetable and Contact pages. 
@@ -188,6 +196,7 @@ export default function Home() {
     </div>
 
     <div className="p-6 border border-gray-700 rounded-lg shadow hover:shadow-lg bg-gray-900 flex flex-col items-center">
+      <Image src="/Judocalculator.png" alt="Judo Fee Calculator Screenshot" width={400} height={220} className="rounded-lg mb-4 object-cover w-full h-44 sm:h-56 md:h-48 lg:h-44 xl:h-48" />
       <h4 className="font-semibold text-xl text-pink-400 text-center mb-2 tracking-wide uppercase">Judo Fee Calculator (Java)</h4>
       <p className="text-sm mt-2 text-gray-300">
         Console-based Java application that calculates monthly training fees for judo athletes based on weight, chosen training plan, and private coaching hours. 
@@ -198,6 +207,7 @@ export default function Home() {
     </div>
 
     <div className="p-6 border border-gray-700 rounded-lg shadow hover:shadow-lg bg-gray-900 flex flex-col items-center">
+      <Image src="/Mealsonwheels.jpg" alt="Meals on Wheels Screenshot" width={400} height={220} className="rounded-lg mb-4 object-cover w-full h-44 sm:h-56 md:h-48 lg:h-44 xl:h-48" />
       <h4 className="font-semibold text-xl text-pink-400 text-center mb-2 tracking-wide uppercase">Meals on Wheels (Enterprise Web App)</h4>
       <p className="text-sm mt-2 text-gray-300">
         A full-stack food delivery system focused on enterprise workflows: customer management, order processing, tracking, and admin reporting. 
@@ -208,6 +218,7 @@ export default function Home() {
     </div>
 
     <div className="p-6 border border-gray-700 rounded-lg shadow hover:shadow-lg bg-gray-900 flex flex-col items-center">
+      <Image src="/Jumpstartfashion.png" alt="Jumpstart Fashion Screenshot" width={400} height={220} className="rounded-lg mb-4 object-cover w-full h-44 sm:h-56 md:h-48 lg:h-44 xl:h-48" />
       <h4 className="font-semibold text-xl text-pink-400 text-center mb-2 tracking-wide uppercase">Jumpstart Fashion (Full-Stack E-Commerce Prototype)</h4>
       <p className="text-sm mt-2 text-gray-300">
         A full-stack e-commerce prototype with product browsing, cart flows, and AI-powered recommendations. Focused on modern UX and backend-for-frontend features using serverless/postgres. <br />

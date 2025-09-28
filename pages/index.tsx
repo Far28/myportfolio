@@ -1,10 +1,13 @@
+
 import Head from "next/head";
 import Image from "next/image";
-import { FaGithub, FaLinkedin, FaJava, FaPython, FaReact, FaBootstrap } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaJava, FaPython, FaReact, FaBootstrap, FaBars, FaTimes } from "react-icons/fa";
 import { SiSpring, SiSpringboot, SiMysql, SiJavascript, SiHtml5, SiCss3, SiApachespark } from "react-icons/si";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Home() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white min-h-screen">
       <Head>
@@ -14,8 +17,9 @@ export default function Home() {
 
       {/* Navbar */}
       <header className="sticky top-0 z-50 bg-gray-900 bg-opacity-90 shadow-lg">
-        <nav className="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <nav className="max-w-6xl mx-auto flex justify-between items-center p-4 relative">
           <h1 className="text-2xl font-bold text-pink-400">F.H. FARHA</h1>
+          {/* Desktop Menu */}
           <ul className="hidden md:flex gap-6 font-medium">
             <li><a href="#about" className="hover:text-pink-400">About</a></li>
             <li><a href="#skills" className="hover:text-pink-400">Skills</a></li>
@@ -23,6 +27,24 @@ export default function Home() {
             <li><a href="#contact" className="hover:text-pink-400">Contact</a></li>
             <li><Link href="/resume" className="hover:text-pink-400">Resume</Link></li>
           </ul>
+          {/* Hamburger Icon */}
+          <button
+            className="md:hidden text-pink-400 text-3xl focus:outline-none z-50"
+            aria-label="Open menu"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <FaTimes /> : <FaBars />}
+          </button>
+          {/* Mobile Menu */}
+          {mobileMenuOpen && (
+            <div className="fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center gap-8 text-2xl font-medium transition-all duration-300 z-40">
+              <a href="#about" className="hover:text-pink-400" onClick={() => setMobileMenuOpen(false)}>About</a>
+              <a href="#skills" className="hover:text-pink-400" onClick={() => setMobileMenuOpen(false)}>Skills</a>
+              <a href="#projects" className="hover:text-pink-400" onClick={() => setMobileMenuOpen(false)}>Projects</a>
+              <a href="#contact" className="hover:text-pink-400" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+              <Link href="/resume" className="hover:text-pink-400" onClick={() => setMobileMenuOpen(false)}>Resume</Link>
+            </div>
+          )}
         </nav>
       </header>
 
